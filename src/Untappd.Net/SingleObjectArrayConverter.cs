@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Untappd.Net
+namespace Untappd.NetStandard
 {
 	/// <summary>
 	/// Created to fix bad json results.

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using NUnit.Framework;
-using Untappd.Net.Authentication;
-using Untappd.Net.Request;
-using Untappd.Net.Responses.BeerInfo;
-using Untappd.Net.Responses.BeerSearch;
-using Untappd.Net.Responses.BreweryInfo;
-using Untappd.Net.Responses.BrewerySearch;
-using Untappd.Net.Responses.Feeds.ActivityFeed;
-using Untappd.Net.Responses.Feeds.UserActivityFeed;
-using Untappd.Net.Responses.UserBadges;
-using Untappd.Net.Responses.UserFriends;
-using Untappd.Net.Responses.UserInfo;
-using Untappd.Net.Responses.VenueInfo;
-using UserDistinctBeers = Untappd.Net.Responses.UserDistinctBeer;
-using UserWishList = Untappd.Net.Responses.UserWishlist;
+using Untappd.NetStandard.Authentication;
+using Untappd.NetStandard.Request;
+using Untappd.NetStandard.Responses.BeerInfo;
+using Untappd.NetStandard.Responses.BeerSearch;
+using Untappd.NetStandard.Responses.BreweryInfo;
+using Untappd.NetStandard.Responses.BrewerySearch;
+using Untappd.NetStandard.Responses.Feeds.ActivityFeed;
+using Untappd.NetStandard.Responses.Feeds.UserActivityFeed;
+using Untappd.NetStandard.Responses.UserBadges;
+using Untappd.NetStandard.Responses.UserFriends;
+using Untappd.NetStandard.Responses.UserInfo;
+using Untappd.NetStandard.Responses.VenueInfo;
+using UserDistinctBeers = Untappd.NetStandard.Responses.UserDistinctBeer;
+using UserWishList = Untappd.NetStandard.Responses.UserWishlist;
 
-namespace Untappd.Net.UnitTests.Responses
+namespace Untappd.NetStandard.UnitTests.Responses
 {
 	[TestFixture]
 	public class TestDeserializer

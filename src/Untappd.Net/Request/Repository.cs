@@ -4,10 +4,10 @@ using System.Net;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using RestSharp;
-using Untappd.Net.Authentication;
-using Untappd.Net.Exception;
+using Untappd.NetStandard.Authentication;
+using Untappd.NetStandard.Exception;
 
-namespace Untappd.Net.Request
+namespace Untappd.NetStandard.Request
 {
     public sealed partial class Repository
     {

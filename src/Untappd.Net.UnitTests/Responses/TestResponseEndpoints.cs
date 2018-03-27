@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
-using Untappd.Net.Request;
+using Untappd.NetStandard.Request;
 
-namespace Untappd.Net.UnitTests.Responses
+namespace Untappd.NetStandard.UnitTests.Responses
 {
 	[TestFixture]
 	public class TestResponseEndpoints
@@ -20,7 +20,7 @@ namespace Untappd.Net.UnitTests.Responses
 			   myType.IsClass
 			   && !myType.IsAbstract
 			   && myType.GetInterface("IRequest") != null).Select(type => (IRequest)Activator.CreateInstance(type)).ToList();
-			objects.ForEach(a => Assert.IsNotNullOrEmpty(a.EndPoint("t")));
+			objects.ForEach(a => AssertHelper.IsNotNullOrEmpty(a.EndPoint("t")));
 		}
 
 		[Test]
@@ -30,7 +30,7 @@ namespace Untappd.Net.UnitTests.Responses
 			   myType.IsClass
 			   && !myType.IsAbstract
 			   && myType.GetInterface("IRequest") != null).Select(type => (IRequest)Activator.CreateInstance(type)).ToList();
-			objects.ForEach(a => Assert.IsNotNullOrEmpty(a.EndPoint(string.Empty)));
+			objects.ForEach(a => AssertHelper.IsNotNullOrEmpty(a.EndPoint(string.Empty)));
 		}
 	}
 }

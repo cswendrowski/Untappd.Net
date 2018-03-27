@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untappd.Net", "src\Untappd.Net\Untappd.Net.csproj", "{D8571A44-2E86-43A3-B64A-2364614C6934}"
 EndProject
@@ -17,22 +17,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8013BA
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untappd.NetStandard", "Untappd.NetStandard\Untappd.NetStandard.csproj", "{9D268C43-B63F-4003-A1A1-173E819DBCB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untappd.NetStandard.UnitTests", "Untappd.NetStandard.UnitTests\Untappd.NetStandard.UnitTests.csproj", "{2D8DB528-FDA6-41F5-BD8A-5093EE2E971E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D8571A44-2E86-43A3-B64A-2364614C6934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8571A44-2E86-43A3-B64A-2364614C6934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8571A44-2E86-43A3-B64A-2364614C6934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8571A44-2E86-43A3-B64A-2364614C6934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513A3FB2-6664-40E7-A03E-591D852C42E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D268C43-B63F-4003-A1A1-173E819DBCB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D268C43-B63F-4003-A1A1-173E819DBCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D268C43-B63F-4003-A1A1-173E819DBCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D268C43-B63F-4003-A1A1-173E819DBCB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D8DB528-FDA6-41F5-BD8A-5093EE2E971E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8DB528-FDA6-41F5-BD8A-5093EE2E971E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8DB528-FDA6-41F5-BD8A-5093EE2E971E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8DB528-FDA6-41F5-BD8A-5093EE2E971E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A5ABACF-A53E-4686-91E9-0DB503BFAA97}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = src\Untappd.Net\Untappd.Net.csproj
@@ -75,8 +91,5 @@ Global
 		$0.StandardHeader = $4
 		$4.Text = 
 		$4.IncludeInNewFiles = True
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

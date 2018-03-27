@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
-using Untappd.Net.Exception;
+using Untappd.NetStandard.Exception;
 
-namespace Untappd.Net.UnitTests.Exception
+namespace Untappd.NetStandard.UnitTests.Exception
 {
 	[TestFixture]
 	public class TestBaseUntappdException

@@ -6,11 +6,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Untappd.Net")]
+[assembly: AssemblyTitle("Untappd.NetStandard")]
 [assembly: AssemblyDescription("C# Untappd Wrapper")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Tommy Parnell")]
-[assembly: AssemblyProduct("Untappd.Net")]
+[assembly: AssemblyProduct("Untappd.NetStandard")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -37,4 +37,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("0.2.*")]
 //If AssemblyFileVersion is not explicitly set, it takes its value from the AssemblyVersion attribute.
 //[assembly: AssemblyFileVersion("0.2.*")]
-[assembly: InternalsVisibleTo("Untappd.Net.UnitTests")]
+[assembly: InternalsVisibleTo("Untappd.NetStandard.UnitTests")]

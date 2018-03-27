@@ -1,9 +1,9 @@
 ﻿using System;
 using NUnit.Framework;
-using Untappd.Net.Authentication;
-using Untappd.Net.OAuth;
+using Untappd.NetStandard.Authentication;
+using Untappd.NetStandard.OAuth;
 
-namespace Untappd.Net.UnitTests.Authentication
+namespace Untappd.NetStandard.UnitTests.Authentication
 {
 	[TestFixture]
 	public class TestAuthenticationHelper

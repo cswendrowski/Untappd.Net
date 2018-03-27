@@ -1,8 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using Untappd.Net.Responses.Actions;
+using Untappd.NetStandard.Responses.Actions;
 
-namespace Untappd.Net.UnitTests.Responses.Actions
+namespace Untappd.NetStandard.UnitTests.Responses.Actions
 {
 	[TestFixture]
 	public class TestCheckInAction
@@ -13,7 +13,7 @@ namespace Untappd.Net.UnitTests.Responses.Actions
 			Assert.Throws<ArgumentNullException>(() => { new CheckIn(string.Empty, "timezone", 1); });
 			Assert.Throws<ArgumentNullException>(() => { new CheckIn("1", string.Empty, 1); });
 			var checkin = new CheckIn("offset", "timezone", 1);
-			Assert.IsNotNullOrEmpty(checkin.RequestMethod.ToString());
+			AssertHelper.IsNotNullOrEmpty(checkin.RequestMethod.ToString());
 			Assert.Throws<ArgumentOutOfRangeException>(() => { checkin.Rating = -1; });
 			Assert.Throws<ArgumentOutOfRangeException>(() => { checkin.Rating = 6; });
 			Assert.Throws<ArgumentOutOfRangeException>(() => { checkin.Shout = new String('d', 141); });
@@ -21,7 +21,7 @@ namespace Untappd.Net.UnitTests.Responses.Actions
 			Assert.AreEqual(3, checkin.Rating);
 			var t = "tst";
 			checkin.Shout = t;
-			Assert.IsNotNullOrEmpty(checkin.EndPoint);
+			AssertHelper.IsNotNullOrEmpty(checkin.EndPoint);
 			Assert.AreEqual(checkin.Shout, t);
 		}
 
